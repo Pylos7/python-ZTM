@@ -1,25 +1,22 @@
 import time
 
-# Decorator
+# Decorator Pattern
 
 # Decorator is a function that takes another function as an argument and extends the behavior of the latter function without explicitly modifying it.
 
 def my_decorator(func):
-    def wrap_func():
+    def wrap_func(*args, **kwargs):
         print('**********')
-        func()
+        func(*args, **kwargs)
         print('**********')
     return wrap_func
 
 @my_decorator # This is the same as saying hello = my_decorator(hello)
-def hello():
-    print('Helllooooo')
+def hello(greeting, emoji="=("):
+    print(greeting, emoji)
 
-@my_decorator
-def bye():
-    print('See ya later')
 
-hello()
+hello("Hi there")
 
 # Decorator with arguments - This is a bit more complicated
 def my_timer(func):
