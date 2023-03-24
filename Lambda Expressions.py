@@ -1,7 +1,7 @@
 # Lambda expressions are used to create anonymous functions that are used only once.
 
 # Example 1
-lambda param: action(param)
+lambda param: param * 2
 
 my_list = [1,2,3]
 
