@@ -1,4 +1,4 @@
-# List Comprehensions - Types: List Comprehensions, Set Comprehensions, Dictionary Comprehensions
+# Tomorrow Comprehensions - Types: List Comprehensions, Set Comprehensions, Dictionary Comprehensions
 
 # List Comprehensions are a way to create lists using an expression
 # The expression is usually a function, but it can be any expression
