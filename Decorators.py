@@ -1,5 +1,5 @@
 # Decorators - The supercharge our functions
-@decorator
+# @decorator
 
 def hello(func):
     func()
