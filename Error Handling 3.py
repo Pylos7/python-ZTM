@@ -4,9 +4,7 @@ while True:
     try:
         age = int(input("What is your age? "))
         10/age
-    except ValueError:
-        print("Please enter a number")
-        continue # continue to the next iteration of the loop
+        raise Exception("Hey cut it out")
     except ZeroDivisionError:
         print("Please enter a number greater than zero")
         break # break out of the loop
@@ -15,4 +13,4 @@ while True:
         break # break out of the loop
     finally:
         print("OK, I am finally done")
-    print("Can you hear me?")
+print("Can you hear me?")
