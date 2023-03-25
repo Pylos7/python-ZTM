@@ -1,8 +1,13 @@
-import utility
-from shopping import shopping_cart
+# Modules and Packages
 
-print(utility.multiply(2, 3))
-print(utility.divide(2, 3))
+from utility import *
+from shopping.shopping_cart import buy
 
-cart = shopping_cart.buy("apples")
-print(cart)
+print(multiply(2, 3))
+print(divide(2, 3))
+print(buy("apples"))
+print(max())
+
+
+if __name__ == "__main__":
+    print("Please run this module from the main.py file")
