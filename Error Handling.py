@@ -13,7 +13,6 @@
 
 try:
     age = int(input("Enter your age: "))
-    10/age
 except ValueError:
     print("Invalid input - Please enter a number")
 except ZeroDivisionError:

@@ -1,8 +1,6 @@
 # Error Handling 2
 
-while True:
-    try:
-        x = int(input("Please enter a number: "))
-        break
-    except ValueError:
-        print("Oops!  That was no valid number.  Try again...")
+def sum(num1, num2):
+    return num1 + num2
+    
+print(sum('1', '2'))
