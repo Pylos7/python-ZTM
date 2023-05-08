@@ -1,12 +1,21 @@
 import re
 
-pattern = re.compile(r"([a-zA-Z]).([a])") # r is raw string
+pattern = re.compile(r"(^[a-zA-Z0-9$%#@]\S{8,})") # r is raw string
 
-string = 'search this inside of this text please! Nestor'
-
+string = 'ni4elc'
 a = pattern.search(string)
-b = pattern.findall(string)
-c = pattern.fullmatch(string)
-d = pattern.match(string)
 
-print(a.group(2))
+
+
+
+
+# At least 8 char long
+# Contains any sort of letters, numbers, $%#@
+#(^[a-zA-Z0-9$%#@]\S{8,})
+# Has to end with a number
+
+pattern2 = re.compile(r"[a-zA-Z0-9$%#@]{8,}\d")
+password = 'jnfjnjfnjnnn3w'
+
+check = pattern2.fullmatch(password)
+print(check)
