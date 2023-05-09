@@ -1,25 +1,20 @@
 # Description: A simple number guessing game
 
-import sys # to get command line arguments
-from random import randint
+import random
 
-num1 = int(sys.argv[1]) # first argument 
-
-num2 = int(sys.argv[2])
-
-answer = randint(num1, num2)
+answer = random.randint(1, 10)
 
 while True: # infinite loop
     try:
-        guess = int(input(f"Guess a number between {num1} and {num2}: "))
-        if num1 <= guess <= num2: # check if guess is between num1 and num2
+        guess = int(input('Guess a number between 1 and 10:  '))
+        if 0 <= guess <= 11: # check if guess is between num1 and num2
             if guess == answer:
                 print("You're a genius!")
                 break
             else:
                 print("Sorry, try again!")
         else:
-            print(f"hey, {guess} is not between {num1} and {num2}")
+            print('hey, I said 1~10')
     except ValueError: # if user enters a string
         print("Please enter a number!")
-
+        continue
